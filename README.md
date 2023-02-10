@@ -5,6 +5,7 @@ Repositorio creado con la intención de compartir conocimiento de Typescript con
 ## Desarrollador
 - Osman Pérez osman2907@gmail.com
 - Portafolio - [Ingresa Aquí](https://osman2907.gitlab.io/portfolio/)
+- Ejemplo original realizado por [Nicolas Molina](https://twitter.com/nicobytes)
 
 ## Conocimientos aplicados
 - Typescript
@@ -37,3 +38,5 @@ Instalar dependencias
 Ejecutar el script principal
 
     npx ts-node app/main.ts
+
+
