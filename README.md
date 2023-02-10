@@ -18,6 +18,9 @@ Repositorio creado con la intención de compartir conocimiento de Typescript con
 - Programacion Orienta a Objetos
 - Asincronismo (Promesas, Async, Await, entre otros)
 
+## Origen de los datos
+Se utilizó una API dispuesta por Platzi para hacer prácticas, llamada **Platzi Fake Store API**, se puede revisar su documentación en el siguiente [enlace](https://api.escuelajs.co/docs).
+
 
 ## Entorno
 - [NodeJs (v16.17.0)](https://nodejs.org/es/)

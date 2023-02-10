@@ -1,14 +1,17 @@
 import { Product } from "./models/product.model";
-import { CreateProductDto, UpdateProductDto } from "./dtos/product.dto";
+import { Category } from "./models/category.model";
+import { CreateProductDto, UpdateProductDto} from "./dtos/product.dto";
 import { ProductHttpService } from "./services/product-http.service";
+import { CategoryHttpService } from "./services/category-http.service";
 import axios from "axios";
 
 (async () => {
   const productService = new ProductHttpService();
+  const CategoryService = new CategoryHttpService();
 
   /******************************Listar Productos******************************/
   console.log("--".repeat(10));
-  console.log("GetAll");
+  console.log("GetAll Products");
   try {
     // const products:Product[] | undefined = await productService.getAll()
     // console.log(products.length)
@@ -21,7 +24,7 @@ import axios from "axios";
 
   /****************************** Buscar Producto******************************/
   console.log("--".repeat(10));
-  console.log("FindOne");
+  console.log("FindOne Products");
   try {
     // const idBuscar: number = 302;
     // const encontrado:Product | undefined = await productService.findOne(idBuscar)
@@ -33,7 +36,7 @@ import axios from "axios";
 
   /******************************Crear Productos******************************/
   console.log("--".repeat(10));
-  console.log("Create");
+  console.log("Create Products");
   // const crear: CreateProductDto = {
   //   categoryId: 2,
   //   description: 'Smart TV Daewoo',
@@ -47,7 +50,7 @@ import axios from "axios";
 
   /******************************Modificar Productos******************************/
   console.log("--".repeat(10));
-  console.log("Update");
+  console.log("Update Products");
   try {
     // const idModificar: number = 302;
     // const modificar: UpdateProductDto = {
@@ -63,4 +66,18 @@ import axios from "axios";
     console.log("Error modificando producto");
   }
   /******************************Fin Modificar Productos******************************/
+
+
+  /******************************Listar Categorías******************************/
+  console.log("--".repeat(10));
+  console.log("GetAll Categories");
+  try {
+    // const categories:Category[] | undefined = await CategoryService.getAll()
+    // console.log(categories.length)
+    // console.log(categories.map(item => item.id))
+    // console.log(categories)
+  } catch (error) {
+    console.log("Error consultando categorías (getAll)");
+  }
+  /****************************** Fin Listar Productos******************************/
 })();
